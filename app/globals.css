@@ -392,6 +392,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .payment-notice { padding: 1rem; background: var(--sage); border-left: 4px solid var(--forest); line-height: 1.5; }
 .donation-panel small { display: block; margin-top: .8rem; color: #666; }
 
+/* Keep large poster-style headings bold without letting multiline text collide. */
+.hero h1,
+.section h2,
+.interior-hero h1,
+.editorial-hero h1 { line-height: 1.12; }
+
 @media (max-width: 1050px) {
   .site-header nav { display: none; }
   .mobile-menu { display: block; }
@@ -432,10 +438,11 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .brand-name { display: none; }
   .brand-mark { width: 40px; height: 40px; }
   .hero-grid { min-height: auto; grid-template-columns: 1fr; }
-  .hero-copy { width: 100%; min-height: 560px; padding: 4.5rem 1rem 3.5rem; }
-  .hero h1 { max-width: 100%; font-size: clamp(3.1rem, 15vw, 5.4rem); line-height: .86; }
-  .hero-intro { width: 100%; }
-  .hero-actions { align-items: flex-start; flex-direction: column; gap: 1.3rem; }
+  .hero-copy { width: 100%; min-height: 560px; padding: 5rem 1.25rem 4rem; }
+  .hero-copy > .eyebrow { max-width: 23rem; margin-bottom: 2rem; line-height: 1.55; text-wrap: balance; }
+  .hero h1 { max-width: 100%; font-size: clamp(3rem, 13.5vw, 4.9rem); line-height: .98; letter-spacing: -.012em; }
+  .hero-intro { width: 100%; margin-top: 2.4rem; line-height: 1.65; }
+  .hero-actions { align-items: flex-start; flex-direction: column; gap: 1.5rem; margin-top: 2.6rem; }
   .hero-art { min-height: 420px; border-left: 0; border-top: 1px solid rgba(245,240,230,.2); }
   .sun-disc { width: 300px; }
   .mi-outline { font-size: 19rem; }
@@ -492,7 +499,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .footer-bottom { flex-direction: column; gap: .65rem; }
   .interior-hero { min-height: auto; grid-template-columns: 1fr; }
   .interior-hero > div:first-child { width: 100%; min-height: 540px; padding: 4.5rem 1rem 3.5rem; }
-  .interior-hero h1, .editorial-hero h1 { max-width: 100%; font-size: clamp(3.1rem, 15vw, 5.5rem); line-height: .86; }
+  .interior-hero h1, .editorial-hero h1 { max-width: 100%; font-size: clamp(2.85rem, 13vw, 4.9rem); line-height: 1.06; letter-spacing: -.012em; }
+  .interior-hero .eyebrow, .editorial-hero .eyebrow { max-width: 100%; line-height: 1.55; letter-spacing: .12em; text-wrap: balance; }
   .interior-art { min-height: 340px; border-left: 0; border-top: 1px solid rgba(245,240,230,.25); }
   .page-cta, .story-split, .water-story, .network-section, .issue-detail, .campaign-callout, .goal-section, .pledge-section, .campaign-path, .campaign-video, .editorial-feature, .newsletter, .donate-section { grid-template-columns: 1fr; }
   .page-cta h2, .story-split h2, .water-story h2, .network-section h2, .campaign-callout h2, .goal-section h2, .pledge-copy h2, .campaign-path h2, .campaign-video h2, .editorial-feature h2, .newsletter h2, .donate-copy h2 { font-size: clamp(3rem, 14.5vw, 5.4rem); }
@@ -524,6 +532,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .news-grid article:last-child { border-bottom: 0; }
   .newsletter form { grid-template-columns: 1fr; }
   .amount-grid { grid-template-columns: repeat(3, 1fr); }
+  .hero h1, .section h2, .interior-hero h1, .editorial-hero h1 { line-height: 1.18; }
+  .pledge-copy h2 { line-height: 1.22; }
 }
 
 @media (max-width: 480px) {
