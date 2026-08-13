@@ -1,9 +1,0 @@
-"use client";
-import { FormEvent, useState } from "react";
-
-export function PledgeForm() {
-  const [done, setDone] = useState(false);
-  if (done) return <div className="pledge-success" role="status"><span>75%</span><h3>Pledge received.</h3><p>Thank you for committing to vote and help your community participate.</p><button className="text-link" onClick={() => setDone(false)}>Make another pledge →</button></div>;
-  function submit(e: FormEvent<HTMLFormElement>) { e.preventDefault(); setDone(true); }
-  return <form className="pledge-form" onSubmit={submit}><div className="form-heading"><span>Take the 75% pledge</span><strong>I will vote — and help my community vote.</strong></div><div className="field-row"><label><span>Full name</span><input name="name" autoComplete="name" required /></label><label><span>Email</span><input type="email" name="email" autoComplete="email" required /></label></div><div className="field-row"><label><span>Phone</span><input type="tel" name="phone" autoComplete="tel" required /></label><label><span>City / ZIP code</span><input name="location" autoComplete="postal-code" required /></label></div><div className="field-row"><label><span>Eligible voters in household</span><input type="number" min="1" name="household" required /></label><label><span>People I will encourage</span><input type="number" min="1" name="encourage" required /></label></div><label className="consent"><input type="checkbox" required /><span>I pledge to vote in the upcoming election.</span></label><label className="consent"><input type="checkbox" name="volunteer" /><span>I also want to volunteer with Drive for 75.</span></label><button className="button button-dark form-submit" type="submit">Take the pledge →</button><small>Drive for 75 is a nonpartisan civic-engagement initiative.</small></form>;
-}

@@ -7,7 +7,7 @@ const cities = ["Detroit", "Dearborn", "Flint", "Lansing", "Grand Rapids", "Ann 
 
 export default function ChaptersPage() {
   return <main><SiteHeader />
-    <InteriorHero eyebrow="Statewide organizing" title="Change starts where" accent="you live." intro="Find your community and connect with a local organizing network. If Grassroots MI is not active near you yet, we will help you take the first step." image="/media/images/p02-neighborhood-meeting-community-center.webp?v=20260811-2" imageAlt="Adults of several ages seated together at a community-center presentation." />
+    <InteriorHero eyebrow="Statewide organizing" title="Change starts where" accent="you live." intro="Find your community and connect with a local organizing network. If Grassroots MI is not active near you yet, we will help you take the first step." image="/media/images/p02-neighborhood-meeting-community-center.webp?v=20260813" imageAlt="Three women wearing headscarves talking together in a bright room." />
     <section className="chapter-directory section">
       <div className="directory-intro"><p className="eyebrow">Find your local chapter</p><h2>One state.<br />Many communities.</h2><p>Choose your city to start the same local chapter form with your community in mind.</p></div>
       <div className="directory-map"><span aria-hidden="true">MI</span><p>Community power across Michigan</p></div>

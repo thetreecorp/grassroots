@@ -11,7 +11,7 @@ export function SiteHeader() {
       </div>
       <header className="site-header">
         <Link className="brand" href="/" aria-label="Grassroots MI home">
-          <span className="brand-mark" aria-hidden="true">MI</span>
+          <img className="brand-logo" src="/media/images/grassroots-mi-logo.png" alt="" aria-hidden="true" width={54} height={54} />
           <span className="brand-name">Grassroots <b>MI</b></span>
         </Link>
         <nav aria-label="Primary navigation">
@@ -19,6 +19,8 @@ export function SiteHeader() {
           <a href="/priorities">Our Priorities</a>
           <a href="/chapters">Chapters</a>
           <a href="/drive-for-75">Drive for 75</a>
+          <a href="/pledge">75% Pledge</a>
+          <a href="/become-a-captain">Become a Captain</a>
           <a href="/events">Events</a>
         </nav>
         <div className="header-actions">
@@ -28,7 +30,7 @@ export function SiteHeader() {
         <details className="mobile-menu">
           <summary aria-label="Open navigation">Menu</summary>
           <div>
-            <a href="/about">About</a><a href="/priorities">Our Priorities</a><a href="/chapters">Chapters</a><a href="/drive-for-75">Drive for 75</a><a href="/events">Events</a><a href="/get-involved">Get Involved</a><a href="/become-a-captain">Become a Captain</a><a href="/donate">Donate</a>
+            <a href="/about">About</a><a href="/priorities">Our Priorities</a><a href="/chapters">Chapters</a><a href="/drive-for-75">Drive for 75</a><a href="/pledge">75% Pledge</a><a href="/events">Events</a><a href="/get-involved">Get Involved</a><a href="/become-a-captain">Become a Captain</a><a href="/donate">Donate</a>
           </div>
         </details>
       </header>
@@ -41,7 +43,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="footer-primary">
         <Link className="brand footer-brand" href="/">
-          <span className="brand-mark" aria-hidden="true">MI</span>
+          <span className="brand-logo-chip"><img className="brand-logo" src="/media/images/grassroots-mi-logo.png" alt="Grassroots MI" width={72} height={72} /></span>
           <span className="brand-name">Grassroots <b>MI</b></span>
         </Link>
         <p>Building youth leadership, community power, representation, and a stronger voice across Michigan.</p>
@@ -49,19 +51,20 @@ export function SiteFooter() {
       </div>
       <div className="footer-links">
         <div><span>Movement</span><a href="/about">About us</a><a href="/priorities">Our priorities</a></div>
-        <div><span>Take action</span><a href="/chapters">Find a chapter</a><a href="/get-involved">Volunteer</a><a href="/become-a-captain">Become a Captain</a><a href="/drive-for-75">Drive for 75</a></div>
+        <div><span>Take action</span><a href="/chapters">Find a chapter</a><a href="/get-involved">Volunteer</a><a href="/become-a-captain">Become a Captain</a><a href="/pledge">75% Pledge</a><a href="/drive-for-75">Drive for 75</a></div>
         <div><span>Connect</span><a href="/events">Events & news</a><a href="/get-involved">Contact</a><a href="/donate">Donate</a></div>
       </div>
       <div className="footer-bottom">
         <span>© 2026 Grassroots MI</span>
-        <span>Nonpartisan · Youth-led · Community-powered</span>
+        <span>Nonpartisan · Next-generation-led · Community-powered</span>
         <span>Privacy · Accessibility</span>
       </div>
     </footer>
   );
 }
 
-export function InteriorHero({ eyebrow, title, accent, intro, tone = "dark", image, imageAlt = "", imagePosition = "center" }: { eyebrow: string; title: string; accent?: string; intro: string; tone?: "dark" | "orange" | "gold"; image?: string; imageAlt?: string; imagePosition?: string }) {
+export function InteriorHero({ eyebrow, title, accent, intro, tone = "dark", image, imageAlt = "", imagePosition = "center", video, poster }: { eyebrow: string; title: string; accent?: string; intro: string; tone?: "dark" | "orange" | "gold"; image?: string; imageAlt?: string; imagePosition?: string; video?: string; poster?: string }) {
+  const hasMedia = Boolean(video || image);
   return (
     <section className={`interior-hero interior-${tone}`} id="main-content">
       <div>
@@ -69,9 +72,17 @@ export function InteriorHero({ eyebrow, title, accent, intro, tone = "dark", ima
         <h1>{title}{accent && <> <span>{accent}</span></>}</h1>
         <p>{intro}</p>
       </div>
-      <div className={`interior-art${image ? " interior-photo" : ""}`} aria-hidden={image ? undefined : "true"}>
-        {image ? <img src={image} alt={imageAlt} style={{ objectPosition: imagePosition }} /> : <span>MI</span>}
-        <i>{image ? "Community in action" : "Community power"}</i>
+      <div className={`interior-art${hasMedia ? " interior-photo" : ""}`} aria-hidden={hasMedia ? undefined : "true"}>
+        {video ? (
+          <video autoPlay muted loop playsInline preload="metadata" poster={poster} aria-label={imageAlt} style={{ objectPosition: imagePosition }}>
+            <source src={video} type="video/mp4" />
+          </video>
+        ) : image ? (
+          <img src={image} alt={imageAlt} style={{ objectPosition: imagePosition }} />
+        ) : (
+          <span>MI</span>
+        )}
+        <i>{hasMedia ? "Community in action" : "Community power"}</i>
       </div>
     </section>
   );

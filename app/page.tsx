@@ -63,16 +63,19 @@ export default function Home() {
           </div>
 
           <div className="hero-art hero-photo-art">
-            <picture>
-              <source media="(max-width: 760px)" srcSet="/media/images/p17-hero-alternative-mobile.webp?v=20260811-2" />
-              <img src="/media/images/p17-hero-alternative-desktop.webp?v=20260811-2" alt="People of several ages sitting together and smiling in a sunny park." fetchPriority="high" />
-            </picture>
+            <video
+              className="hero-video"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              poster="/media/video/posters/hero-women-hijabs-flag-poster.webp?v=20260813"
+              aria-label="Women wearing headscarves holding an American flag together."
+            >
+              <source src="/media/video/hero-women-hijabs-flag.mp4?v=20260813" type="video/mp4" />
+            </video>
             <div className="hero-photo-shade" aria-hidden="true" />
-            <div className="hero-stamp">
-              <span>Youth-led</span>
-              <strong>Michigan</strong>
-              <strong>Rising</strong>
-            </div>
             <p className="hero-note">Young people lead. Every generation belongs. Every community has a voice.</p>
           </div>
         </div>
@@ -87,9 +90,9 @@ export default function Home() {
           <span>Statewide · Youth-led · Intergenerational</span>
         </div>
         <div className="manifesto-grid">
-          <h2>We are the<br /><em>people&apos;s</em><br />movement.</h2>
+          <h2>We are the<br /><em>answer</em><br />movement.</h2>
           <div className="manifesto-copy">
-            <figure className="manifesto-photo"><img src="/media/images/p20-community-discussion-bright-room.webp?v=20260811-2" alt="Four adults seated in a circle during a discussion in a bright room." decoding="async" /><figcaption>Listen locally. Organize together. Lead forward.</figcaption></figure>
+            <figure className="manifesto-photo"><img src="/media/images/p20-community-discussion-bright-room.webp?v=20260813" alt="Three young women wearing headscarves meeting around a laptop." decoding="async" /><figcaption>Listen locally. Organize together. Lead forward.</figcaption></figure>
             <p className="lead">We equip young people to organize across cities and communities so every voice is heard, every community is represented, and everyone&apos;s rights are protected.</p>
             <p>From economic opportunity and civil rights to fair representation and social justice, Michigan is stronger when communities that have too often been left out have a seat at the table.</p>
             <a className="text-link" href="/about">Meet the movement <span aria-hidden="true">→</span></a>
@@ -139,7 +142,7 @@ export default function Home() {
           <a className="button button-gold" href="#join">Start a chapter <span aria-hidden="true">→</span></a>
         </div>
         <div className="chapter-map chapter-photo">
-          <img src="/media/images/p02-neighborhood-meeting-community-center.webp?v=20260811-2" alt="Adults of several ages seated together at a community-center presentation." decoding="async" />
+          <img src="/media/images/p02-neighborhood-meeting-community-center.webp?v=20260813" alt="Three women wearing headscarves talking together in a bright room." decoding="async" />
           <p className="map-label">Find your place in the movement</p>
         </div>
         <div className="city-list" aria-label="Local chapter cities">
@@ -157,14 +160,14 @@ export default function Home() {
       </section>
 
       <section className="drive section" id="drive-75">
-        <img className="drive-photo" src="/media/images/p09-american-muslim-polling-place.webp?v=20260811-2" alt="A woman in a head covering greeting someone while people wait at a polling place." decoding="async" />
+        <img className="drive-photo" src="/media/images/p09-american-muslim-polling-place.webp?v=20260813" alt="A woman in a head covering greeting someone while people wait at a polling place." decoding="async" />
         <div className="drive-number" aria-hidden="true">75</div>
         <div className="drive-content">
           <p className="eyebrow light">Nonpartisan civic engagement</p>
           <h2><span>75%</span> turnout.<br />Every community.<br />Every voice.</h2>
           <p>Drive for 75 is a statewide initiative to educate, mobilize, reach voters, and remove barriers to participation in underrepresented communities.</p>
           <div className="drive-actions">
-            <a className="button button-cream" href="/drive-for-75">Take the 75% pledge <span aria-hidden="true">→</span></a>
+            <a className="button button-cream" href="/pledge">Take the 75% pledge <span aria-hidden="true">→</span></a>
             <a className="text-link light-link" href="/drive-for-75">Bring it to my community <span aria-hidden="true">↗</span></a>
           </div>
         </div>

@@ -5,10 +5,10 @@ export const metadata: Metadata = { title: "About Us | Grassroots MI", descripti
 
 export default function AboutPage() {
   return <main><SiteHeader />
-    <InteriorHero eyebrow="About Grassroots MI" title="Represented. Empowered." accent="Unstoppable." intro="Grassroots MI is a statewide, youth-led movement building power, representation, and opportunity for people and communities too often left out of the decisions that shape Michigan." image="/media/images/p20-community-discussion-bright-room.webp?v=20260811-2" imageAlt="Four adults seated in a circle during a discussion in a bright room." imagePosition="42% center" />
+    <InteriorHero eyebrow="About Grassroots MI" title="Represented. Empowered." accent="Unstoppable." intro="Grassroots MI is a statewide movement powered by a new generation of leaders, building power, representation, and opportunity for people and communities too often left out of the decisions that shape Michigan." image="/media/images/p20-community-discussion-bright-room.webp?v=20260813" imageAlt="Three young women wearing headscarves meeting around a laptop." imagePosition="center" />
     <section className="story-split section">
       <div><p className="eyebrow">Our purpose</p><h2>Young people deserve a seat — and a voice — at the table.</h2></div>
-      <div className="prose-large"><p>We develop youth leadership across cities, neighborhoods, campuses, faith communities, and generations so every voice is heard and everyone&apos;s rights are protected.</p><p>From economic opportunity and civil rights to fair representation and social justice, we believe Michigan is stronger when the people most affected by public decisions have a meaningful role in making them.</p><p>Our work is nonpartisan, locally rooted, youth-forward, and strengthened by mentors, families, and allies of every generation.</p></div>
+      <div className="prose-large"><p>We develop the next generation of leaders across cities, neighborhoods, campuses, faith communities, and communities throughout Michigan so every voice is heard and everyone&apos;s rights are protected.</p><p>From economic opportunity and civil rights to fair representation and social justice, we believe Michigan is stronger when the people most affected by public decisions have a meaningful role in making them.</p></div>
     </section>
     <section className="values-section section">
       <div className="section-label"><span>What guides us</span><span>Our values</span></div>

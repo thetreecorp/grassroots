@@ -12,7 +12,7 @@ const issues = [
 
 export default function PrioritiesPage() {
   return <main><SiteHeader />
-    <InteriorHero eyebrow="What we're fighting for" title="A Michigan that works for" accent="everyone." intro="Our priorities are rooted in dignity, fairness, representation, and the belief that every community should have an equal opportunity to thrive." tone="orange" image="/media/images/p03-volunteer-meeting-applause.webp?v=20260811-2" imageAlt="A woman speaking as people around a meeting table applaud." />
+    <InteriorHero eyebrow="What we're fighting for" title="A Michigan that works for" accent="everyone." intro="Our priorities are rooted in dignity, fairness, representation, and the belief that every community should have an equal opportunity to thrive." tone="orange" image="/media/images/p03-volunteer-meeting-applause.webp?v=20260813" imageAlt="Two young women wearing headscarves writing a plan on a whiteboard." />
     <section className="issue-stack section">
       {issues.map((issue) => <article className="issue-detail" key={issue.n}><div className="issue-title"><span>{issue.n}</span><h2>{issue.title}</h2></div><div><p>{issue.problem}</p><h3>What we organize for</h3><ul>{issue.focus.map((item) => <li key={item}>{item}</li>)}</ul><a className="text-link" href="/get-involved">Take action →</a></div></article>)}
     </section>

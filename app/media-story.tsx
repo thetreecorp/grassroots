@@ -8,8 +8,8 @@ const clips = [
     label: "Youth power",
     title: "A generation ready to lead",
     description: "Young people bring urgency, creativity, and new energy to community action.",
-    src: "/media/video/v06-diverse-friends-circle-outdoors.mp4?v=20260811-2",
-    poster: "/media/video/posters/v06-diverse-friends-circle-outdoors-poster.webp?v=20260811-2",
+    src: "/media/video/v06-diverse-friends-circle-outdoors.mp4?v=20260813",
+    poster: "/media/video/posters/v06-diverse-friends-circle-outdoors-poster.webp?v=20260813",
     alt: "A diverse group of young adults smiling in a circle outdoors.",
   },
   {
@@ -17,8 +17,8 @@ const clips = [
     label: "Collaboration",
     title: "Ideas become action together",
     description: "Organizing begins when people share ideas, listen, and decide what to build together.",
-    src: "/media/video/v09-muslim-women-collaborating-cafe.mp4?v=20260811-2",
-    poster: "/media/video/posters/v09-muslim-women-collaborating-cafe-poster.webp?v=20260811-2",
+    src: "/media/video/v09-muslim-women-collaborating-cafe.mp4?v=20260813",
+    poster: "/media/video/posters/v09-muslim-women-collaborating-cafe-poster.webp?v=20260813",
     alt: "Four women in head coverings collaborating around a tablet at a table.",
   },
   {
@@ -26,8 +26,8 @@ const clips = [
     label: "Every voice",
     title: "Show up for democracy",
     description: "Welcoming, practical civic engagement makes participation feel possible for every community.",
-    src: "/media/video/v03-volunteer-greeting-family-polling-place.mp4?v=20260811-2",
-    poster: "/media/video/posters/v03-volunteer-greeting-family-polling-place-poster.webp?v=20260811-2",
+    src: "/media/video/v03-volunteer-greeting-family-polling-place.mp4?v=20260813",
+    poster: "/media/video/posters/v03-volunteer-greeting-family-polling-place-poster.webp?v=20260813",
     alt: "A volunteer greeting people as they arrive at a polling place.",
   },
 ];

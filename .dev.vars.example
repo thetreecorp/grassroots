@@ -1,0 +1,15 @@
+# Copy to `.dev.vars` for local development (Wrangler/Miniflare loads it
+# automatically; it is git-ignored and never reaches the browser).
+#
+# In production set these as Worker secrets / environment variables through
+# your hosting platform. Without PLEDGE_SHEETS_ENDPOINT, the /pledge form
+# still works in local dev (submission is logged, not saved) and returns a
+# 503 error to real users until it is configured.
+#
+# See docs/PLEDGE_SHEETS_SETUP.md for how to create these values.
+
+# The Google Apps Script Web App deployment URL (ends in /exec)
+PLEDGE_SHEETS_ENDPOINT=
+
+# A shared secret you invent; must match SHARED_SECRET in the Apps Script
+PLEDGE_SHEETS_SECRET=
