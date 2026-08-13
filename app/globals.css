@@ -392,6 +392,34 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .payment-notice { padding: 1rem; background: var(--sage); border-left: 4px solid var(--forest); line-height: 1.5; }
 .donation-panel small { display: block; margin-top: .8rem; color: #666; }
 
+/* Become a Captain */
+.interior-hero .lede { max-width: 780px; margin: 1.4rem 0 0; font-size: clamp(1.25rem, 2vw, 1.6rem); line-height: 1.4; font-weight: 650; color: var(--cream); letter-spacing: -.01em; }
+.interior-gold .lede { color: var(--ink); }
+.join-form, .join-success, .captain-form, .captain-success { align-self: start; padding: clamp(1.6rem, 3.5vw, 3rem); background: var(--white); border: 1px solid var(--ink); box-shadow: 10px 10px 0 var(--gold); }
+.join-form label, .captain-form label { display: flex; flex-direction: column; gap: .45rem; margin-bottom: 1rem; font-size: .67rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; }
+.join-form input, .join-form select, .captain-form input, .captain-form select, .captain-form textarea { width: 100%; min-height: 48px; padding: .75rem .8rem; border: 1px solid rgba(16,20,18,.5); border-radius: 0; background: var(--cream); color: var(--ink); text-transform: none; letter-spacing: normal; font: inherit; }
+.captain-form textarea { min-height: 108px; padding-top: .65rem; resize: vertical; }
+.join-form .consent, .captain-form .consent { flex-direction: row; align-items: flex-start; gap: .7rem; font-weight: 600; text-transform: none; letter-spacing: 0; line-height: 1.4; }
+.join-form .consent input, .captain-form .consent input { width: 20px; min-height: 20px; height: 20px; flex: none; accent-color: var(--forest); }
+.captain-form fieldset { margin: 0 0 1.2rem; padding: 0; border: 0; }
+.captain-form legend { display: block; margin-bottom: .6rem; padding: 0; font-size: .67rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; }
+.radio-group { display: flex; flex-wrap: wrap; gap: .55rem; }
+.radio-group label { display: inline-flex; align-items: center; gap: .5rem; min-height: 42px; padding: .55rem .9rem; border: 1px solid rgba(16,20,18,.5); background: var(--cream); font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
+.radio-group label:has(input:checked) { background: var(--forest); color: var(--white); border-color: var(--forest); }
+.radio-group input { width: 15px; height: 15px; accent-color: var(--white); }
+.checkbox-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: .6rem 1rem; }
+.checkbox-grid label { display: flex; align-items: flex-start; gap: .6rem; margin: 0; font-size: .76rem; font-weight: 600; text-transform: none; letter-spacing: 0; line-height: 1.35; cursor: pointer; }
+.checkbox-grid input { width: 18px; min-height: 18px; height: 18px; margin-top: .1rem; flex: none; accent-color: var(--forest); }
+.field-hint { margin: -.6rem 0 1rem; font-size: .72rem; color: #606562; }
+.honeypot-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; opacity: 0; }
+.form-error { margin: 0 0 1.2rem; padding: .85rem 1rem; background: #f8e6e0; border-left: 4px solid var(--orange); color: #6a2c12; font-size: .82rem; line-height: 1.5; }
+.form-submit[aria-busy="true"] { opacity: .7; cursor: wait; }
+.join-success p:not(.eyebrow), .captain-success p:not(.eyebrow) { line-height: 1.6; }
+.captain-success { min-height: 430px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+.captain-success > span { width: 56px; height: 56px; display: grid; place-items: center; margin-bottom: 1.5rem; border-radius: 50%; background: var(--forest); color: var(--white); font-size: 1.7rem; }
+.captain-success h3 { margin: 0 0 1rem; font-family: Impact, "Arial Black", sans-serif; font-size: clamp(2.5rem, 4vw, 4rem); text-transform: uppercase; line-height: .95; }
+.captain-success .text-link { margin-top: 1rem; }
+
 /* Keep large poster-style headings bold without letting multiline text collide. */
 .hero h1,
 .section h2,
@@ -493,7 +521,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .join { grid-template-columns: 1fr; }
   .join-copy h2 { font-size: clamp(3.1rem, 15vw, 5.5rem); }
   .field-row { grid-template-columns: 1fr; gap: 0; }
-  .join-form, .join-success { box-shadow: 6px 6px 0 var(--gold); }
+  .join-form, .join-success, .captain-form, .captain-success { box-shadow: 6px 6px 0 var(--gold); }
+  .checkbox-grid { grid-template-columns: 1fr; }
   .footer-primary { grid-template-columns: 1fr; }
   .footer-links { grid-template-columns: 1fr 1fr; }
   .footer-bottom { flex-direction: column; gap: .65rem; }

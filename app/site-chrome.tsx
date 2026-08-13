@@ -28,7 +28,7 @@ export function SiteHeader() {
         <details className="mobile-menu">
           <summary aria-label="Open navigation">Menu</summary>
           <div>
-            <a href="/about">About</a><a href="/priorities">Our Priorities</a><a href="/chapters">Chapters</a><a href="/drive-for-75">Drive for 75</a><a href="/clean-water">Clean Water</a><a href="/events">Events</a><a href="/get-involved">Get Involved</a><a href="/donate">Donate</a>
+            <a href="/about">About</a><a href="/priorities">Our Priorities</a><a href="/chapters">Chapters</a><a href="/drive-for-75">Drive for 75</a><a href="/clean-water">Clean Water</a><a href="/events">Events</a><a href="/get-involved">Get Involved</a><a href="/become-a-captain">Become a Captain</a><a href="/donate">Donate</a>
           </div>
         </details>
       </header>
@@ -49,7 +49,7 @@ export function SiteFooter() {
       </div>
       <div className="footer-links">
         <div><span>Movement</span><a href="/about">About us</a><a href="/priorities">Our priorities</a><a href="/clean-water">Clean water</a></div>
-        <div><span>Take action</span><a href="/chapters">Find a chapter</a><a href="/get-involved">Volunteer</a><a href="/drive-for-75">Drive for 75</a></div>
+        <div><span>Take action</span><a href="/chapters">Find a chapter</a><a href="/get-involved">Volunteer</a><a href="/become-a-captain">Become a Captain</a><a href="/drive-for-75">Drive for 75</a></div>
         <div><span>Connect</span><a href="/events">Events & news</a><a href="/get-involved">Contact</a><a href="/donate">Donate</a></div>
       </div>
       <div className="footer-bottom">
