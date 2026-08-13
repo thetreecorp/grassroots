@@ -16,7 +16,6 @@ export default function PrioritiesPage() {
     <section className="issue-stack section">
       {issues.map((issue) => <article className="issue-detail" key={issue.n}><div className="issue-title"><span>{issue.n}</span><h2>{issue.title}</h2></div><div><p>{issue.problem}</p><h3>What we organize for</h3><ul>{issue.focus.map((item) => <li key={item}>{item}</li>)}</ul><a className="text-link" href="/get-involved">Take action →</a></div></article>)}
     </section>
-    <section className="campaign-callout section"><div><p className="eyebrow">Independent issue campaign</p><h2>Clean Water &<br />Healthy Communities</h2></div><div><p>Our Flint-rooted campaign focuses on safe drinking water, infrastructure accountability, and healthy neighborhoods across Michigan.</p><a className="button button-dark" href="/clean-water">Explore the campaign →</a></div></section>
     <PageCTA title="Turn priorities into progress." copy="Choose the issue that matters to you and connect with a local chapter or statewide campaign." />
     <SiteFooter />
   </main>;

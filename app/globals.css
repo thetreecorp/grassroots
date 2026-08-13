@@ -145,17 +145,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .priority-card a { justify-self: end; font-size: .7rem; font-weight: 850; text-transform: uppercase; border-bottom: 2px solid var(--orange); padding-bottom: .25rem; }
 .priority-card:hover h3 { color: var(--forest); }
 
-.water-campaign { position: relative; display: grid; grid-template-columns: 1.15fr .85fr; min-height: 650px; background: var(--gold); color: var(--ink); overflow: hidden; }
-.water-mark { position: absolute; left: -2rem; bottom: -5rem; font-family: Impact, "Arial Black", sans-serif; font-size: min(23vw, 23rem); line-height: .8; color: transparent; -webkit-text-stroke: 2px rgba(16,20,18,.16); letter-spacing: -.03em; }
-.water-copy { position: relative; z-index: 2; max-width: 760px; }
-.water-copy h2 { font-size: clamp(4.3rem, 8.5vw, 8.6rem); line-height: .86; }
-.water-copy > p:not(.eyebrow) { max-width: 680px; font-size: 1.1rem; line-height: 1.65; }
-.campaign-actions { display: flex; align-items: center; gap: 1.5rem; margin-top: 2rem; }
-.campaign-actions > span { font-size: .66rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
-.water-facts { position: relative; z-index: 2; align-self: center; display: flex; flex-direction: column; border-top: 2px solid var(--ink); }
-.water-photo { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-bottom: 5px solid var(--forest-deep); }
-.water-facts span { display: grid; grid-template-columns: 3rem 1fr; align-items: center; min-height: 92px; border-bottom: 1px solid var(--ink); font-size: .7rem; font-weight: 800; }
-.water-facts strong { font-family: Impact, "Arial Black", sans-serif; font-size: clamp(1.5rem, 2.6vw, 2.7rem); text-transform: uppercase; letter-spacing: .015em; }
 
 .chapters { display: grid; grid-template-columns: .8fr 1fr 1.2fr; gap: 5vw; background: var(--forest-deep); color: var(--cream); }
 .chapters-intro h2 { font-size: clamp(3.8rem, 6vw, 6.7rem); line-height: .88; }
@@ -247,8 +236,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .page-cta h2 { font-size: clamp(4rem, 7vw, 7rem); line-height: .86; }
 .page-cta > div:last-child > p { max-width: 600px; font-size: 1.05rem; line-height: 1.65; color: rgba(245,240,230,.76); }
 .cta-actions { display: flex; align-items: center; gap: 2rem; margin-top: 2rem; }
-.story-split, .water-story { display: grid; grid-template-columns: 1fr 1fr; gap: 8vw; background: var(--cream); }
-.story-split h2, .water-story h2, .donate-copy h2 { font-size: clamp(3.8rem, 6.4vw, 6.8rem); line-height: .87; }
+.story-split { display: grid; grid-template-columns: 1fr 1fr; gap: 8vw; background: var(--cream); }
+.story-split h2, .donate-copy h2 { font-size: clamp(3.8rem, 6.4vw, 6.8rem); line-height: .87; }
 .prose-large p { margin-top: 0; font-size: clamp(1.15rem, 1.8vw, 1.5rem); line-height: 1.55; letter-spacing: -.015em; }
 .values-section, .ways-section { background: var(--sage); }
 .value-grid { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 3.5rem; border: 1px solid var(--ink); }
@@ -273,10 +262,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .issue-detail h3 { margin-top: 2rem; font-size: .7rem; text-transform: uppercase; letter-spacing: .12em; }
 .issue-detail ul { padding: 0; list-style: none; border-top: 1px solid var(--line); }
 .issue-detail li { padding: .8rem 0; border-bottom: 1px solid var(--line); }
-.campaign-callout { display: grid; grid-template-columns: 1fr .8fr; gap: 8vw; background: var(--gold); align-items: center; }
-.campaign-callout h2 { font-size: clamp(4rem, 7vw, 7.2rem); line-height: .86; }
-.campaign-callout > div:last-child p { font-size: 1.15rem; line-height: 1.6; }
-.campaign-callout .button { margin-top: 1rem; }
 .chapter-directory { display: grid; grid-template-columns: .85fr 1fr 1fr; gap: 5vw; background: var(--forest-deep); color: var(--cream); }
 .directory-intro h2 { font-size: clamp(3.5rem, 5.6vw, 6rem); line-height: .87; }
 .directory-intro > p:last-child { color: rgba(245,240,230,.72); line-height: 1.6; }
@@ -329,24 +314,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .pledge-success { min-height: 430px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
 .pledge-success > span { color: var(--orange); font-family: Impact, "Arial Black", sans-serif; font-size: 6rem; line-height: 1; }
 .pledge-success h3 { margin: .5rem 0; font-family: Impact, "Arial Black", sans-serif; font-size: 3.5rem; text-transform: uppercase; }
-.water-pillars { background: var(--gold); }
-.pillar-grid { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 3.5rem; border: 1px solid var(--ink); }
-.pillar-grid article { min-height: 360px; display: flex; flex-direction: column; padding: 2.2rem; border-right: 1px solid var(--ink); }
-.pillar-grid article:last-child { border-right: 0; }
-.pillar-grid span { font-family: Impact, "Arial Black", sans-serif; font-size: 2.2rem; }
-.pillar-grid h2 { margin-top: auto; font-size: clamp(2.6rem, 4.5vw, 4.5rem); line-height: .9; }
-.pillar-grid p { line-height: 1.55; }
-.campaign-path { display: grid; grid-template-columns: .9fr 1.1fr; gap: 8vw; background: var(--forest-deep); color: var(--cream); }
-.campaign-path h2 { font-size: clamp(4rem, 7vw, 7rem); line-height: .86; }
-.campaign-path ol { margin: 0; padding: 0; list-style: none; border-top: 1px solid rgba(245,240,230,.35); }
-.campaign-path li { display: grid; grid-template-columns: 60px 1fr; gap: 1rem; padding: 1.4rem 0; border-bottom: 1px solid rgba(245,240,230,.25); }
-.campaign-path li > span { color: var(--gold); font-size: .7rem; font-weight: 850; }
-.campaign-path strong { font-size: 1.3rem; text-transform: uppercase; }
-.campaign-path p { margin: .4rem 0 0; color: rgba(245,240,230,.7); line-height: 1.5; }
-.campaign-video { display: grid; grid-template-columns: .7fr 1.3fr; gap: 6vw; align-items: center; background: var(--ink); color: var(--cream); }
-.campaign-video h2 { font-size: clamp(4rem, 7vw, 7rem); line-height: .86; }
-.campaign-video > div > p:last-child { color: rgba(245,240,230,.7); line-height: 1.65; }
-.campaign-video video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid rgba(245,240,230,.28); background: #000; }
 .editorial-hero { min-height: 650px; padding: clamp(5rem, 9vw, 9rem) 7vw; display: flex; flex-direction: column; justify-content: center; background: var(--forest-deep); color: var(--cream); }
 .editorial-hero h1 span { color: var(--gold); }
 .editorial-hero > p:last-child { max-width: 720px; font-size: 1.2rem; line-height: 1.6; color: rgba(245,240,230,.76); }
@@ -504,10 +471,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .priority-card { grid-template-columns: 45px 1fr; gap: 1rem; padding: 1.5rem 0; }
   .priority-card p, .priority-card a { grid-column: 2; }
   .priority-card h3 { font-size: clamp(1.4rem, 7vw, 1.65rem); }
-  .water-campaign { grid-template-columns: 1fr; min-height: auto; }
-  .water-copy h2 { font-size: clamp(3.1rem, 15vw, 5.5rem); }
-  .campaign-actions { align-items: flex-start; flex-direction: column; }
-  .water-facts { margin-top: 3.5rem; }
   .chapters { grid-template-columns: 1fr; }
   .chapters-intro { grid-column: auto; grid-template-columns: 1fr; gap: 1rem; }
   .chapters-intro .eyebrow { grid-column: auto; margin-bottom: 0; }
@@ -531,15 +494,14 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .interior-hero h1, .editorial-hero h1 { max-width: 100%; font-size: clamp(2.85rem, 13vw, 4.9rem); line-height: 1.06; letter-spacing: -.012em; }
   .interior-hero .eyebrow, .editorial-hero .eyebrow { max-width: 100%; line-height: 1.55; letter-spacing: .12em; text-wrap: balance; }
   .interior-art { min-height: 340px; border-left: 0; border-top: 1px solid rgba(245,240,230,.25); }
-  .page-cta, .story-split, .water-story, .network-section, .issue-detail, .campaign-callout, .goal-section, .pledge-section, .campaign-path, .campaign-video, .editorial-feature, .newsletter, .donate-section { grid-template-columns: 1fr; }
-  .page-cta h2, .story-split h2, .water-story h2, .network-section h2, .campaign-callout h2, .goal-section h2, .pledge-copy h2, .campaign-path h2, .campaign-video h2, .editorial-feature h2, .newsletter h2, .donate-copy h2 { font-size: clamp(3rem, 14.5vw, 5.4rem); }
+  .page-cta, .story-split, .network-section, .issue-detail, .goal-section, .pledge-section, .editorial-feature, .newsletter, .donate-section { grid-template-columns: 1fr; }
+  .page-cta h2, .story-split h2, .network-section h2, .goal-section h2, .pledge-copy h2, .editorial-feature h2, .newsletter h2, .donate-copy h2 { font-size: clamp(3rem, 14.5vw, 5.4rem); }
   .belief-band h2 { font-size: clamp(2.35rem, 12.5vw, 5rem); }
   .cta-actions { align-items: flex-start; flex-direction: column; }
-  .value-grid, .method-grid, .pillar-grid, .ways-grid { grid-template-columns: 1fr; }
-  .value-grid article, .method-grid article, .pillar-grid article, .ways-grid article { min-height: 260px; border-right: 0 !important; border-bottom: 1px solid var(--ink) !important; }
-  .value-grid article:last-child, .method-grid article:last-child, .pillar-grid article:last-child, .ways-grid article:last-child { border-bottom: 0 !important; }
+  .value-grid, .method-grid, .ways-grid { grid-template-columns: 1fr; }
+  .value-grid article, .method-grid article, .ways-grid article { min-height: 260px; border-right: 0 !important; border-bottom: 1px solid var(--ink) !important; }
+  .value-grid article:last-child, .method-grid article:last-child, .ways-grid article:last-child { border-bottom: 0 !important; }
   .value-grid h3 { font-size: clamp(1.9rem, 9.5vw, 2.3rem); }
-  .pillar-grid h2 { font-size: clamp(1.9rem, 9.5vw, 3.5rem); }
   .issue-detail { gap: 2rem; }
   .issue-title { grid-template-columns: 45px 1fr; }
   .issue-detail h2 { font-size: clamp(2rem, 10vw, 4rem); }
@@ -552,7 +514,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .option-grid article + article { border-left: 0; border-top: 1px solid var(--ink); }
   .goal-number { font-size: clamp(10rem, 50vw, 14rem); }
   .pledge-form, .pledge-success, .donation-panel { box-shadow: 6px 6px 0 var(--forest-deep); }
-  .pillar-grid article { min-height: 280px; }
   .editorial-hero { min-height: 540px; padding: 4.5rem 1rem; }
   .editorial-feature { gap: 3rem; }
   .feature-visual { min-height: 420px; padding: 1.5rem; }

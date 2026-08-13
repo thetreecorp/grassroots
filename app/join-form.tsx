@@ -37,7 +37,7 @@ export function JoinForm({ cities }: { cities: string[] }) {
         <label><span>City</span><select name="city" defaultValue="" required><option value="" disabled>Select your city</option>{cities.map((city) => <option key={city}>{city}</option>)}<option>Another community</option></select></label>
         <label><span>ZIP code</span><input name="zip" inputMode="numeric" autoComplete="postal-code" pattern="[0-9]{5}(-[0-9]{4})?" required /></label>
       </div>
-      <label><span>I&apos;d like to</span><select name="interest" defaultValue="Join my local chapter" required><option>Join my local chapter</option><option>Volunteer</option><option>Attend events</option><option>Take the 75% pledge</option><option>Start a chapter</option><option>Support the clean water campaign</option></select></label>
+      <label><span>I&apos;d like to</span><select name="interest" defaultValue="Join my local chapter" required><option>Join my local chapter</option><option>Volunteer</option><option>Attend events</option><option>Take the 75% pledge</option><option>Start a chapter</option></select></label>
       <label className="consent"><input type="checkbox" required /><span>I agree to receive updates from Grassroots MI. I can unsubscribe at any time.</span></label>
       <button className="button button-orange form-submit" type="submit">Count me in <span aria-hidden="true">→</span></button>
       <small>Your information will only be used to connect you with Grassroots MI organizing opportunities.</small>

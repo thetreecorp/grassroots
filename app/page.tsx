@@ -131,25 +131,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="water-campaign section" id="clean-water">
-        <div className="water-mark" aria-hidden="true">WATER</div>
-        <div className="water-copy">
-          <p className="eyebrow">Independent campaign · Flint and beyond</p>
-          <h2>Clean Water.<br />Healthy Communities.</h2>
-          <p>No community should have to fight for safe drinking water. This independent Grassroots MI campaign connects Flint&apos;s continuing story to infrastructure, accountability, and public health across the state.</p>
-          <div className="campaign-actions">
-            <a className="button button-dark" href="/clean-water">Stand with Flint <span aria-hidden="true">→</span></a>
-            <span>Explore the campaign</span>
-          </div>
-        </div>
-        <div className="water-facts" aria-label="Campaign focus areas">
-          <img className="water-photo" src="/media/images/p15-environmental-engineer-water-testing.webp?v=20260811-2" alt="A worker in safety equipment examining a water sample beside a river." decoding="async" />
-          <span>01 <strong>Safe water</strong></span>
-          <span>02 <strong>Accountability</strong></span>
-          <span>03 <strong>Healthy neighborhoods</strong></span>
-        </div>
-      </section>
-
       <section className="chapters section" id="chapters">
         <div className="chapters-intro">
           <p className="eyebrow light">Statewide organizing</p>
