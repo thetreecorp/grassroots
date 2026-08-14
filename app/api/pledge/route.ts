@@ -1,7 +1,7 @@
 import { env } from "cloudflare:workers";
 
 // 75% Pledge intake handler.
-////
+//////
 // Submissions are persisted to Google Sheets via a Google Apps Script Web
 // App (Option B). No Google credentials live in this codebase or the
 // browser: the server reads the deployment URL + shared secret from Worker
