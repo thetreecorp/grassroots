@@ -365,6 +365,15 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .donation-consent { display: flex; align-items: center; gap: .7rem; margin: 1rem 0; font-size: .8rem; }
 .payment-notice { padding: 1rem; background: var(--sage); border-left: 4px solid var(--forest); line-height: 1.5; }
 .donation-panel small { display: block; margin-top: .8rem; color: #666; }
+.donate-methods { align-self: start; display: flex; flex-direction: column; gap: 1.5rem; }
+.zelle-card { padding: clamp(1.6rem, 3.5vw, 2.4rem); background: var(--white); border: 1px solid var(--ink); box-shadow: 10px 10px 0 var(--gold); text-align: center; }
+.zelle-head { display: flex; align-items: center; justify-content: center; gap: .7rem; margin-bottom: .5rem; }
+.zelle-badge { padding: .3rem .55rem; background: #6d1ed4; color: #fff; font-size: .72rem; font-weight: 850; letter-spacing: .01em; border-radius: 6px; }
+.zelle-head strong { font-family: Impact, "Arial Black", sans-serif; font-size: 1.35rem; text-transform: uppercase; letter-spacing: .01em; }
+.zelle-card p { margin: .2rem 0 1.1rem; font-size: .92rem; line-height: 1.5; color: #3d423f; }
+.zelle-card p b { color: var(--forest); }
+.zelle-qr { display: block; width: min(240px, 70%); height: auto; margin: 0 auto; border: 1px solid var(--line); background: var(--white); }
+.zelle-card small { display: block; margin-top: .9rem; color: #606562; font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; }
 
 /* Become a Captain */
 .interior-hero .lede { max-width: 780px; margin: 1.4rem 0 0; font-size: clamp(1.25rem, 2vw, 1.6rem); line-height: 1.4; font-weight: 650; color: var(--cream); letter-spacing: -.01em; }
