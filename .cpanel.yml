@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/septxcom/dev.grassrootsmi.org
+    - cd $DEPLOYPATH
+    - git pull origin main
+    - npm ci --include=dev
+    - npm run build
+    - npx pm2 restart grassroots || npx pm2 start server.js --name grassroots
